@@ -10,9 +10,10 @@ START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title("Stock Prediction App")
+st.write("Made using Streamlit and [Fbprophet](https://facebook.github.io/prophet/docs/quick_start.html) Library")
+st.write("Getting Stock Data from [Yahoo Finance](https://in.finance.yahoo.com/)")
 
 selected_stocks = st.text_input("Enter Stock ticker from Yahoo finance Site")
-st.write("[Click Here](https://in.finance.yahoo.com/) to Go to Yahoo Finance Site")
 
 n_years = st.slider("Years of prediction", 1, 4)
 period = n_years*365
